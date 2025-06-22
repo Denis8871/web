@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8" />
+<title>Лабораторна робота №9</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="style.css" />
+
+<link
+  rel="stylesheet"
+  href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+/>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+</head>
+<body>
+
+<div id="main-page" class="centered active">
+  <h1>Знайди Картинку</h1>
+  <div id="category-select">
+    <label><input type="radio" name="category" value="animals" checked /> Тварини</label>
+    <label><input type="radio" name="category" value="another" checked /> Інше</label>
+  </div>
+  <button id="start-game-btn">Почати гру</button>
+</div>
+
+<div id="game-page" class="centered">
+  <div id="game-field"></div>
+  <div id="current-picture"></div>
+  <button id="restart-btn">Почати з початку</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

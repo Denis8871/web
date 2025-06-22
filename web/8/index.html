@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Лабораторна робота №8</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="main-page" class="centered active">
+  <h1>Вибір цифр</h1>
+  <button id="start-game-btn">Почати</button>
+</div>
+
+<div id="game-page" class="centered">
+  <div id="timer">Час: 60</div>
+  <div id="game-field"></div>
+  <button id="restart-btn">Почати з початку</button>
+  <div id="stats">
+    <h2>Статистика</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Спроба</th>
+          <th>Час (сек)</th>
+        </tr>
+      </thead>
+      <tbody id="stats-body"></tbody>
+    </table>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

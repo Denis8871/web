@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>Лабораторна робота №1</title>
+</head>
+<body>
+    <script>
+        // 1
+        let num = -100;
+        while (num <= 100) {
+            if (num > 0) {
+                console.log(num);
+            }
+            num++;
+        }
+
+        // 2
+        function Numbers() {
+            let i = 0;
+            do {
+                console.log(i);
+                i += 2;
+            } while (i <= 100);
+        }
+        Numbers();
+
+        // 3
+        let b = 1000;
+        let count = 0;
+        while (b >= 5) {
+            b /=3;
+            count++;
+        }
+        let res = b;
+        document.write("Результат: " + res + "<br>");
+        document.write("Кількість ітерацій: " + count + "<br>");
+
+        // 4
+        let cm = prompt("Введіть довжину в сантиметрах:");
+        let inch = cm / 2.54;
+        alert("Довжина в дюймах: " + inch);
+
+        // 5
+        let Day = prompt("Введіть число від 1 до 31:");
+        let date = new Date(new Date().getFullYear(), new Date().getMonth(), Day);
+        let Week = ["Неділя", "Понеділок", "Вівторок", "Середа", "Четвер", "П’ятниця", "Субота"];
+        document.write("День тижня: " + Week[date.getDay()]);
+    </script>
+</body>
+</html>
